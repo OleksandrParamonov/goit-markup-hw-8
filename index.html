@@ -27,40 +27,74 @@
     <!--Шапка профиля-->
     <header class="header" data-header>
       <div class="container header-nav">
-        <nav class="nav">
-          <a class="logo link" href="/">Web<span class="logo--black">Studio</span></a>
-          <ul class="nav__list list">
-            <li class="nav__item">
-              <a class="nav__link nav-hover link nav__link--current-blu" href="index.html"
-                >Студія</a
+        <a class="logo link" href="/">Web<span class="logo--black">Studio</span></a>
+        <!--Menu-button-->
+        <button
+          class="nav__button"
+          data-menu-button
+          aria-controls="menu-container"
+          aria-expanded="false"
+        >
+          <svg class="nav__icon" width="40" height="40" aria-label="Перемикач мобільного меню">
+            <use class="nav__icon--close" href="./images/icons.svg#icon-close"></use>
+            <use class="nav__icon--menu" href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+        <div class="menu-container" id="menu-container" data-menu>
+          <!--Navigation-->
+          <nav class="nav">
+            <ul class="nav__list list">
+              <li class="nav__item">
+                <a class="nav__link nav-hover link nav__link--current-blu" href="index.html"
+                  >Студія</a
+                >
+              </li>
+              <li class="nav__item">
+                <a class="nav__link nav-hover link" href="portfolio.html">Портфоліо</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link nav-hover link" href="./">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+          <!--Contacts-->
+
+          <ul class="contact list">
+            <li class="contact__item">
+              <a class="contact__link nav-hover link" href="mailto:info@devstudio.com"
+                ><svg class="contact__icons" width="16px" height="12px">
+                  <use href="./images/icons.svg#mail"></use></svg
+                >info@devstudio.com</a
               >
             </li>
-            <li class="nav__item">
-              <a class="nav__link nav-hover link" href="portfolio.html">Портфоліо</a>
+            <li class="contact__item">
+              <a class="contact__link nav-hover link" href="tel:+380961111111"
+                ><svg class="contact__icons" width="10px" height="16px">
+                  <use href="./images/icons.svg#phone"></use></svg
+                >+38 096 111 11 11</a
+              >
             </li>
-            <li class="nav__item">
-              <a class="nav__link nav-hover link" href="./">Контакти</a>
+            <!--header social-menu-->
+          </ul>
+          <ul class="header-social list social-list">
+            <li class="header-social__item" lang="en" rel="noreferrer noopener">
+              <a class="header-social__link" href="">Instagram</a
+              ><span class="header-social__line">|</span>
+            </li>
+            <li class="header-social__item" lang="en" rel="noreferrer noopener">
+              <a class="header-social__link" href="">Twitter</a
+              ><span class="header-social__line">|</span>
+            </li>
+            <li class="header-social__item" lang="en" rel="noreferrer noopener">
+              <a class="header-social__link" href="">Facebook</a
+              ><span class="header-social__line">|</span>
+            </li>
+            <li class="header-social__item" lang="en" rel="noreferrer noopener">
+              <a class="header-social__link" href="">LinkedIn</a
+              ><span class="header-social__line">|</span>
             </li>
           </ul>
-        </nav>
-        <!--Contacts-->
-
-        <ul class="contact list">
-          <li class="contact__item">
-            <a class="contact__link nav-hover link" href="mailto:info@devstudio.com"
-              ><svg class="contact__icons" width="16px" height="12px">
-                <use href="./images/icons.svg#mail"></use></svg
-              >info@devstudio.com</a
-            >
-          </li>
-          <li class="contact__item">
-            <a class="contact__link nav-hover link" href="tel:+380961111111"
-              ><svg class="contact__icons" width="10px" height="16px">
-                <use href="./images/icons.svg#phone"></use></svg
-              >+38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+        </div>
       </div>
     </header>
 
@@ -126,7 +160,7 @@
         </div>
       </section>
 
-      <!--Work section-->
+      <!--Work section--
       <section class="work section">
         <div class="container">
           <h2 class="section-title">Чим ми займаємося</h2>
@@ -165,7 +199,7 @@
         </div>
       </section>
 
-      <!--Our comand-->
+      <!--Our comand--
 
       <section class="command section">
         <div class="container">
@@ -183,7 +217,7 @@
                 <h3 class="command__subtitle">Ігор Дем'яненко</h3>
                 <p class="command__article">Product Designer</p>
 
-                <!--Social-icons 1-->
+                <!--Social-icons 1--
                 <ul class="social card-set list">
                   <li class="social__item card-item item">
                     <a
@@ -244,7 +278,7 @@
                 <h3 class="command__subtitle">Ольга Рєпіна</h3>
                 <p class="command__article">Frontend Developer</p>
 
-                <!--Social-icons 2-->
+                <!--Social-icons 2--
                 <ul class="social card-set list">
                   <li class="social__item card-item item">
                     <a
@@ -305,7 +339,7 @@
                 <h3 class="command__subtitle">Микола Тарасов</h3>
                 <p class="command__article">Marketing</p>
 
-                <!--Social-icons 3-->
+                <!--Social-icons 3--
                 <ul class="social card-set list">
                   <li class="social__item card-item item">
                     <a
@@ -366,7 +400,7 @@
                 <h3 class="command__subtitle">Михайло Єрмаков</h3>
                 <p class="command__article">UI Designer</p>
 
-                <!--Social-icons 4-->
+                <!--Social-icons 4--
                 <ul class="social card-set list">
                   <li class="social__item card-item item">
                     <a
@@ -419,7 +453,7 @@
         </div>
       </section>
 
-      <!--CUSTOMERS-->
+      <!--CUSTOMERS--
 
       <section class="customers section">
         <h2 class="customers__title">Постійні клієнти</h2>
@@ -496,7 +530,7 @@
       </section>
     </main>
 
-    <!--Footer-->
+    <!--Footer--
 
     <footer class="footer">
       <div class="container card-set">
@@ -526,7 +560,7 @@
             </ul>
           </address>
         </div>
-        <!--Join-in-->
+        <!--Join-in--
         <div class="join">
           <h2 class="join__title item-title">приєднуйтесь</h2>
           <ul class="social card-set">
@@ -561,7 +595,7 @@
           </ul>
         </div>
 
-        <!--Footer form-->
+        <!--Footer form--
         <div class="footer__form">
           <h2 class="join__title item-title">Підпишіться на розсилку</h2>
           <form class="footer__form-email card-set">
@@ -649,5 +683,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

@@ -1,33 +1,41 @@
 .contact {
+  display: flex;
+  margin-left: auto;
+  flex-direction: column;
+  gap: 32px;
+  @media screen and (min-width: 1200px) {
     display: flex;
-    margin-left: auto;
+    gap: 50px;
+  }
 }
 
-.contact .contact__item+.contact__item {
+.contact .contact__item + .contact__item {
+  margin-left: 0;
+
+  @media screen and (min-width: 1200px) {
     margin-left: 50px;
+  }
 }
 
 .contact__icons {
-    fill: var(--main-txt-cl);
-    margin-right: 10px;
-    transition: fill var(--animation);
+  fill: var(--main-txt-cl);
+  margin-right: 10px;
+  transition: fill var(--animation);
 
-
-&:hover {
+  &:hover {
     fill: var(--main-bg-btn-cl);
-}
+  }
 }
 
 .contact__link {
-    color: inherit;
-    transition: color var(--animation);
+  color: inherit;
+  transition: color var(--animation);
 
-
-&:hover .contact__icons {
+  &:hover .contact__icons {
     fill: var(--main-bg-btn-cl);
-}
+  }
 
-&:focus .contact__icons {
+  &:focus .contact__icons {
     fill: var(--main-bg-btn-cl);
-}
+  }
 }
